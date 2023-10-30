@@ -1,0 +1,76 @@
+
+**** Build of configuration CPU1_RAM for project epwm_ecap_lp_f2837xd ****
+
+"C:\\ti\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../lab_ePwm_eCap_launchpad.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1250/ccs/utils/sysconfig_1.18.0/sysconfig_cli.bat" -s "C:/ti/c2000/C2000Ware_5_00_00_00/.metadata/sdk.json" -b "/boards/LAUNCHXL_F28379D" --script "C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd/lab_ePwm_eCap_launchpad.syscfg" -o "syscfg" --compiler ccs
+Running script...
+Validating...
+warning: myADC0(/driverlib/adc.js) soc0SampleWindow: SOC0 sample window must be at least 15
+warning: myEPWM0(/driverlib/epwm.js) epwmCounterCompare_cmpA: It is recommended to use a non-zero counter compare value when using shadow to active load of action qualifier A/B control register on TBCTR=0 boundary
+warning: myEPWM0(/driverlib/epwm.js) epwmCounterCompare_cmpB: It is recommended to use a non-zero counter compare value when using shadow to active load of action qualifier A/B control register on TBCTR=0 boundary
+warning: myEPWM0(/driverlib/epwm.js) epwm.epwm_aPin: Connected to hardware
+	PWM1A / GPIO0/40 is connected to EPWM1 BP on the LaunchPad F28379D. Consider selecting it in 'use hardware' above. Using a custom board?
+warning: myEPWM0(/driverlib/epwm.js) epwm.epwm_bPin: Connected to hardware
+	PWM1B / GPIO1/39 is connected to EPWM1 BP on the LaunchPad F28379D. Consider selecting it in 'use hardware' above. Using a custom board?
+warning: myEPWM2(/driverlib/epwm.js) epwm.epwm_aPin: Connected to hardware
+	PWM2A / GPIO2/38 is connected to EPWM2 BP on the LaunchPad F28379D. Consider selecting it in 'use hardware' above. Using a custom board?
+warning: myEPWM2(/driverlib/epwm.js) epwm.epwm_bPin: Connected to hardware
+	PWM2B / GPIO3/37 is connected to EPWM2 BP on the LaunchPad F28379D. Consider selecting it in 'use hardware' above. Using a custom board?
+info: myEPWM0(/driverlib/epwm.js) epwmTimebase_clockDiv: For perfectly synchronized TBCLKs across multiple EPWM modules, the prescaler bits in the TBCTL register of each EPWM module must be set identically
+info: myEPWM0(/driverlib/epwm.js) epwmActionQualifier_t1Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+info: myEPWM0(/driverlib/epwm.js) epwmActionQualifier_t2Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+info: myEPWM2(/driverlib/epwm.js) epwmTimebase_clockDiv: For perfectly synchronized TBCLKs across multiple EPWM modules, the prescaler bits in the TBCTL register of each EPWM module must be set identically
+info: myEPWM2(/driverlib/epwm.js) epwmActionQualifier_t1Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+info: myEPWM2(/driverlib/epwm.js) epwmActionQualifier_t2Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+Generating Code (lab_ePwm_eCap_launchpad.syscfg)...
+Writing C:\Users\smerritt2019\Desktop\TI EV\epwm_ecap_lp_f2837xd\CPU1_RAM\syscfg\board.c...
+Writing C:\Users\smerritt2019\Desktop\TI EV\epwm_ecap_lp_f2837xd\CPU1_RAM\syscfg\board.h...
+Writing C:\Users\smerritt2019\Desktop\TI EV\epwm_ecap_lp_f2837xd\CPU1_RAM\syscfg\board.cmd.genlibs...
+Writing C:\Users\smerritt2019\Desktop\TI EV\epwm_ecap_lp_f2837xd\CPU1_RAM\syscfg\board.opt...
+Writing C:\Users\smerritt2019\Desktop\TI EV\epwm_ecap_lp_f2837xd\CPU1_RAM\syscfg\pinmux.csv...
+Writing C:\Users\smerritt2019\Desktop\TI EV\epwm_ecap_lp_f2837xd\CPU1_RAM\syscfg\epwm.dot...
+Writing C:\Users\smerritt2019\Desktop\TI EV\epwm_ecap_lp_f2837xd\CPU1_RAM\syscfg\adc.dot...
+Writing C:\Users\smerritt2019\Desktop\TI EV\epwm_ecap_lp_f2837xd\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Writing C:\Users\smerritt2019\Desktop\TI EV\epwm_ecap_lp_f2837xd\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Writing C:\Users\smerritt2019\Desktop\TI EV\epwm_ecap_lp_f2837xd\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Writing C:\Users\smerritt2019\Desktop\TI EV\epwm_ecap_lp_f2837xd\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Writing C:\Users\smerritt2019\Desktop\TI EV\epwm_ecap_lp_f2837xd\CPU1_RAM\syscfg\clocktree.h...
+0 error(s), 7 warning(s)
+Finished building: "../lab_ePwm_eCap_launchpad.syscfg"
+ 
+Building file: "../device/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd" --include_path="C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd/device" --include_path="C:/ti/c2000/C2000Ware_5_00_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=CPU1 --define=_LAUNCHXL_F28379D --define=NO_SELECT_ECAP_INPUT --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/F2837xD_CodeStartBranch.d_raw" --include_path="C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/F2837xD_CodeStartBranch.asm"
+Finished building: "../device/F2837xD_CodeStartBranch.asm"
+ 
+Building file: "syscfg/c2000ware_libraries.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd" --include_path="C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd/device" --include_path="C:/ti/c2000/C2000Ware_5_00_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=CPU1 --define=_LAUNCHXL_F28379D --define=NO_SELECT_ECAP_INPUT --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/c2000ware_libraries.d_raw" --include_path="C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/c2000ware_libraries.c"
+Finished building: "syscfg/c2000ware_libraries.c"
+ 
+Building file: "../lab_main.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd" --include_path="C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd/device" --include_path="C:/ti/c2000/C2000Ware_5_00_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=CPU1 --define=_LAUNCHXL_F28379D --define=NO_SELECT_ECAP_INPUT --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab_main.d_raw" --include_path="C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../lab_main.c"
+Finished building: "../lab_main.c"
+ 
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd" --include_path="C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd/device" --include_path="C:/ti/c2000/C2000Ware_5_00_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=CPU1 --define=_LAUNCHXL_F28379D --define=NO_SELECT_ECAP_INPUT --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --include_path="C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/device.c"
+Finished building: "../device/device.c"
+ 
+Building file: "syscfg/board.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd" --include_path="C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd/device" --include_path="C:/ti/c2000/C2000Ware_5_00_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=CPU1 --define=_LAUNCHXL_F28379D --define=NO_SELECT_ECAP_INPUT --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/board.d_raw" --include_path="C:/Users/smerritt2019/Desktop/TI EV/epwm_ecap_lp_f2837xd/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/board.c"
+Finished building: "syscfg/board.c"
+ 
+Building target: "epwm_ecap_lp_f2837xd.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --define=DEBUG --define=CPU1 --define=_LAUNCHXL_F28379D --define=NO_SELECT_ECAP_INPUT --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"epwm_ecap_lp_f2837xd.map" --stack_size=0x100 --warn_sections -i"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/lib" -i"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="epwm_ecap_lp_f2837xd_linkInfo.xml" --entry_point=code_start --rom_model -o "epwm_ecap_lp_f2837xd.out" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./lab_main.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_00_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "epwm_ecap_lp_f2837xd.out"
+ 
+
+**** Build Finished ****

@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:lab_lp_f2837xd,org.eclipse.launchbar.core.descriptorType.default\:syscfg_lp_f2837xd,org.eclipse.launchbar.core.descriptorType.default\:epwm_ex11_configure_signal
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:epwm_ecap_lp_f2837xd/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:epwm_ecap_lp_f2837xd/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:epwm_ex11_configure_signal/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:epwm_ex11_configure_signal/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:lab_lp_f2837xd/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:lab_lp_f2837xd/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

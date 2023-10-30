@@ -1,0 +1,44 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../2837xD_FLASH_lnk_cpu1.cmd 
+
+LIB_SRCS += \
+../device/driverlib/ccs/Debug/driverlib.lib 
+
+C_SRCS += \
+../foc.c \
+../hvp045a.c \
+../ucc5870/ucc5870.c 
+
+C_DEPS += \
+./foc.d \
+./hvp045a.d \
+./ucc5870.d 
+
+OBJS += \
+./foc.obj \
+./hvp045a.obj \
+./ucc5870/ucc5870.obj 
+
+OBJS__QUOTED += \
+"foc.obj" \
+"hvp045a.obj" \
+"ucc5870\ucc5870.obj" 
+
+C_DEPS__QUOTED += \
+"foc.d" \
+"hvp045a.d" \
+"ucc5870.d" 
+
+C_SRCS__QUOTED += \
+"../foc.c" \
+"../hvp045a.c" \
+"../ucc5870/ucc5870.c" 
+
+

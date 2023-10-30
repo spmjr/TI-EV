@@ -1,0 +1,53 @@
+/**
+ * These arguments were used when this file was generated. They will be automatically applied on subsequent loads
+ * via the GUI or CLI. Run CLI with '--help' for additional information on how to override these arguments.
+ * @cliArgs --board "/boards/LAUNCHXL_F28379D" --context "CPU1" --product "C2000WARE@5.00.00.00"
+ * @versions {"tool":"1.18.0+3266"}
+ */
+
+/**
+ * Import the modules used in this configuration.
+ */
+const led       = scripting.addModule("/driverlib/board_components/led", {}, false);
+const led1      = led.addInstance();
+const led2      = led.addInstance();
+const cputimer  = scripting.addModule("/driverlib/cputimer.js", {}, false);
+const cputimer1 = cputimer.addInstance();
+const gpio      = scripting.addModule("/driverlib/gpio.js", {}, false);
+const gpio1     = gpio.addInstance();
+const gpio2     = gpio.addInstance();
+
+/**
+ * Write custom configuration values to the imported modules.
+ */
+led1.$name             = "myBoardLED0";
+led1.$hardware         = system.deviceData.board.components.LED4;
+led1.gpio.initialValue = 1;
+
+led2.$name     = "myBoardLED1";
+led2.$hardware = system.deviceData.board.components.LED5;
+
+cputimer1.$name                    = "Led_Toggle_Timer";
+cputimer1.timerPeriod              = 100000000;
+cputimer1.enableInterrupt          = true;
+cputimer1.registerInterrupts       = true;
+cputimer1.startTimer               = true;
+cputimer1.timerInt.enableInterrupt = true;
+
+gpio1.$name           = "myGPIO0";
+gpio1.direction       = "GPIO_DIR_MODE_OUT";
+gpio1.gpioPin.$assign = "boosterpack2.74";
+
+gpio2.$name             = "myGPIO1";
+gpio2.direction         = "GPIO_DIR_MODE_OUT";
+gpio2.writeInitialValue = true;
+gpio2.initialValue      = 1;
+gpio2.gpioPin.$assign   = "boosterpack2.73";
+
+/**
+ * Pinmux solution for unlocked pins/peripherals. This ensures that minor changes to the automatic solver in a future
+ * version of the tool will not impact the pinmux you originally saw.  These lines can be completely deleted in order to
+ * re-solve from scratch.
+ */
+led1.gpio.gpioPin.$suggestSolution = "GPIO31";
+led2.gpio.gpioPin.$suggestSolution = "GPIO34";
