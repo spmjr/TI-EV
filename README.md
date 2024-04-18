@@ -1,1 +1,1 @@
-To get the PWM model work dowload and then unzip the Wheel show case zip file
+To get the PWM model to work download and then unzip the Wheel showcase zip file
